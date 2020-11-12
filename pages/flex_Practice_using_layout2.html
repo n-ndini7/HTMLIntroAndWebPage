@@ -1,0 +1,91 @@
+<!doctype html>
+<title>Flex Sample 2</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: beige;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  header{
+    text-align: center;
+    height: 15vh;
+    background: yellowgreen;
+    font-weight: bold;
+  } 
+  footer {
+      text-align: center;
+    background: yellowgreen;
+    height: 15vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="col-1"><a>NAVIGATE</a>
+      <ul>
+          <li><a href="https://www.thehindu.com/news/international/trump-is-not-conceding-whats-next/article33082173.ece?homepage=true">Trump is not conceding. What’s next?
+        </a></li>
+        <li><a href="https://thehindu.com/news/national/covishield-completes-enrolment-of-phase-3-clinical-trials-under-partnership-of-icmr-and-serum-institute-of-india/article33081171.ece">COVISHIELD completes enrolment of Phase-3 clinical trials under partnership of ICMR and Serum Institute of India</a></li>
+        <li><a href="https://www.thehindu.com/news/national/coronavirus-india-lockdown-november-12-2020-live-updates/article33081049.ece?homepage=true">Coronavirus India lockdown day 231 updates | Schools not to reopen from November 16 in TN</a></li>    
+    </ul>
+  </nav>
+  <div class="col-2">
+  	<header>HEADER - Sample Flexbox Example using Layout 2</header>
+    <main class="content">
+        <article>
+            <h2>First Article : The IPL 2020 Team of the Tournament</h2>
+            <p>Let's start with the easy picks first. We're talking of Orange Cap winner and Kings XI Punjab (KXIP) captain KL Rahul along with Purple Cap winner and Delhi Capitals' (DC's) ace of pace Kagiso Rabada. That's 678 runs at an average of 55.83 and 30 wickets at 18.26, respectively.
+                And opening with Rahul is Shikhar Dhawan - the first batsman to score back-to-back IPL centuries. The DC opener finished the tournament's second-highest scorer, 52 runs behind Rahul.</p>
+                <p>To continue reading .... <a href = "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/the-ipl-2020-team-of-the-tournament/articleshow/79183772.cms">Read more..</a></p>
+        </article>    
+        <article>
+            <h2>Second Article : Nirmala Sitharaman says government has 12 new schemes in its kitty</h2>
+            <p>A day after announcing a scheme to boost manufacturing sector, Finance Minister Nirmala Sitharaman is meeting the press to announce more stimulus.
+
+                The government on Wednesday approved a Production-Linked Incentive (PLI) scheme for ten key sectors, including telecom, automobiles and pharmaceuticals, taking the total outlay for such incentives to nearly Rs 2 lakh crore over a five-year period.</p>
+                <p>To continue reading ... <a href="https://www.thehindu.com/business/nirmala-sitharaman-announces-stimulus-live-updates/article33082209.ece">Read more ...</a></p>
+            </article>
+        <article>
+            <h2>Third Article : Climate change: Hurricanes get stronger on land as world warms</h2>
+            <p>North Atlantic hurricanes are retaining far more of their strength when they hit land because of global warming, say scientists.
+
+                Previously, experts believed these storms died down quickly once they made landfall.
+                
+                But over the past 50 years, the time it takes for hurricanes to dissipate on the coast has almost doubled.
+                
+                Researchers says that climate change gives the storms more energy, which continues to power them over land.
+                
+                The scientists involved say that this will likely make hurricanes more damaging further inland in years to come.</p>
+                <p>To continue reading ...<a href="https://www.bbc.com/news/science-environment-54902068">Read more ...</a></p>
+            </article>
+    <aside>Aside</aside>
+    </main>
+  	<footer>Footer</footer>
+  </div>
+</body>
